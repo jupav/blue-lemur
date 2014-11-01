@@ -1,0 +1,35 @@
+@import 'compass/reset';
+@import 'compass';
+@import 'susy';
+@import 'breakpoint';
+
+//screen size variables
+
+$mobile: 320px;
+$mobile-large: 520px;
+$tablet: 765px; 
+$desktop: 960px;
+
+//fonts
+$font-family : "helvetica", sans-serif;
+$logo-family : "peachy-keen", sans-serif;
+$reg     : 400;
+$bold    : 700;
+
+$main-font: $reg 1.5em/1.25em $font-family;
+$body-copy: $reg 1em/1.25em $font-family;
+$header-font: $reg 3.5em/1.25em $logo-family;
+
+//colour palette
+$primary:            #0081b7;
+$light-gradient:     rgba(0, 0, 0, .25);
+$dark-gradient:      rgba(0, 0, 0, .5);
+$white:              #ffffff;
+
+//susy grid map
+$susy: (
+    columns:12,
+    container: 60em,
+    gutters: 1/4,
+    gutter-position: inside
+);

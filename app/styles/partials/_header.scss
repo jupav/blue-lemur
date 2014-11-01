@@ -1,0 +1,35 @@
+figure {
+    text-align: center;
+    margin: 1em 0;
+    a {
+        @include inline-block;
+        text-decoration: none;
+    }
+}
+
+.logo {
+    height: 3em;
+    margin-right: .5em;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-list{
+    @include inline-block;
+    li {
+        display: inherit;
+        width: 6em;
+        list-style: none;
+        margin: .5em .25em;
+        background: $primary;
+        padding: .5em;
+        @include border-radius(.35em, .35em);
+    }
+    a {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: $white;
+    }
+}

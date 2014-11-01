@@ -1,0 +1,35 @@
+body {
+    @include box-sizing(border-box);
+    font-size: 100%;
+}
+
+p, a {
+    font: $main-font;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: $logo-family;
+    color: $primary;
+    line-height: 1.25em;
+}
+
+h1 {
+    font-size: 1.85em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background: -webkit-linear-gradient(left, $light-gradient, $dark-gradient, $light-gradient);
+    background: linear-gradient(to right, $light-gradient, $dark-gradient, $light-gradient);
+    width: 75%;
+    margin: 3em auto;
+}
