@@ -1,6 +1,6 @@
 figure {
     text-align: center;
-    margin: 1em 0;
+    margin: 1em 0 2em;
     a {
         @include inline-block;
         text-decoration: none;
@@ -24,12 +24,21 @@ nav {
         list-style: none;
         margin: .5em .25em;
         background: $primary;
-        padding: .5em;
+        padding: .35em;
+        border: solid $primary 3px;
         @include border-radius(.35em, .35em);
+        @include box-sizing(border-box);
     }
     a {
-        font-size: 1.5em;
+        font-size: 1.25em;
         text-decoration: none;
         color: $white;
+        &:hover {
+            color: $primary;
+            li {
+                background: $white;
+                border: solid $primary 3px;
+            }
+        }
     }
 }
